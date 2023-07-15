@@ -1,0 +1,187 @@
+@use '../abstracts/mixins' as *;
+
+main {
+  #features {
+    margin: var(--m-120-152) 1.5rem var(--m-160-144);
+    display: grid;
+    row-gap: 5rem;
+    text-align: center;
+
+    img {
+      margin-inline: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: var(--fs-h2-features);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: var(--fs-14);
+    }
+
+    @include breakpoint('tablet-small') {
+      @include container(--w-70);
+    }
+
+    @include breakpoint('tablet') {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 17%;
+      max-width: 880px;
+    }
+  }
+
+  .bigFeature {
+    margin: 0 1.5rem 10rem;
+    display: grid;
+    align-items: center;
+
+    &__img-box {
+      img {
+        margin-inline: auto;
+        margin-bottom: 3rem;
+
+        @include breakpoint('desktop') {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__text-box {
+      @include breakpoint('desktop') {
+        margin-left: 3.5rem;
+      }
+
+      h2 {
+        font-size: var(--fs-h2-big-f);
+      }
+
+      p {
+        margin-block: 1rem;
+        font-size: var(--fs-14-16);
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--cyan-cta-gradient);
+        font-size: var(--fs-12-16);
+        text-decoration: underline;
+      }
+    }
+
+    @include breakpoint('tablet-small') {
+      @include container(--w-70);
+    }
+
+    @include breakpoint('tablet') {
+      width: 87%;
+    }
+
+    @include breakpoint('desktop') {
+      max-width: 1235px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  #comments {
+    margin: 0 3rem;
+    max-width: 1180px;
+
+    @include breakpoint('tablet-small') {
+      @include container(--w-70);
+    }
+
+    @include breakpoint('tablet') {
+      width: 85%;
+    }
+
+    .quote {
+      width: 2rem;
+      margin-left: 0.25rem;
+
+      @include breakpoint('tablet') {
+        width: auto;
+        margin-left: -0.625rem;
+      }
+    }
+
+    .comments-container {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: -0.25rem;
+
+      @include breakpoint('tablet') {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: -0.625rem;
+      }
+
+      @include breakpoint('desktop') {
+        gap: 2.5rem;
+      }
+
+      &__comment {
+        background-color: var(--bg-testimonials);
+        padding: var(--m-24-40) 1.25rem 1.25rem;
+        border-radius: 4px;
+
+        .comment {
+          font-size: var(--fs-comment);
+          margin-bottom: var(--m-16-24);
+        }
+        &__author {
+          display: flex;
+          gap: 0.5rem;
+
+          img {
+            border-radius: 50%;
+            width: 1.5rem;
+            aspect-ratio: 1;
+          }
+
+          &__text-box {
+            .author {
+              font-size: var(--fs-10);
+              font-weight: 700;
+            }
+
+            .jobTitle {
+              font-size: var(--fs-job-title);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #CTA {
+    background: var(--bg-testimonials);
+    margin: 0 1.25rem;
+    text-align: center;
+    border-radius: 8px;
+    padding: 2.5rem var(--m-28-76);
+    transform: translateY(50%);
+    max-width: 863px;
+
+    @include breakpoint('tablet-small') {
+      @include container(--w-70);
+    }
+
+    @include breakpoint('tablet') {
+      transform: translateY(40%);
+      margin-top: 5.75rem;
+    }
+
+    .title {
+      font-size: var(--fs-title-form);
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: var(--fs-14);
+      margin-bottom: 2rem;
+    }
+  }
+}

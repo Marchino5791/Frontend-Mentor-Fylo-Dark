@@ -1,0 +1,27 @@
+form {
+  display: grid;
+  gap: 1.5rem;
+
+  @include breakpoint('desktop') {
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  .input-container {
+    .input-container__text {
+      height: 3rem;
+      border-radius: 9999px;
+      font-size: var(--fs-input);
+      padding-inline: var(--m-24-40);
+      width: 100%;
+    }
+
+    .input_container__error {
+      color: var(--error);
+      font-size: var(--fs-10);
+      padding-inline-start: var(--m-24-40);
+      text-align: left;
+      margin-top: 0.5rem;
+    }
+  }
+}

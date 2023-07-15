@@ -1,0 +1,125 @@
+@use '../abstracts/mixins' as *;
+
+:root {
+  // colors
+  --bg-intro-n-mail: hsl(217, 28%, 15%);
+  --bg-main: hsl(218, 28%, 13%);
+  --bg-footer: hsl(216, 53%, 9%);
+  --bg-testimonials: hsl(219, 30%, 18%);
+  --cyan-cta-gradient: hsl(176, 68%, 64%);
+  --blue-cta-gradient: hsl(198, 60%, 50%);
+  --error: hsl(0, 100%, 63%);
+
+  // font family
+  --ff-body: 'Open Sans', sans-serif;
+  --ff-header-n-cta: 'Raleway', sans-serif;
+
+  // font size from mobile to desktop
+  --fs-12-16: 0.75rem; // 1rem d, navlink and main link
+  --fs-h1: 1.5rem; // 2.5rem desktop
+  --fs-secondary-heading: 0.875rem; // 1.25rem d
+  --fs-14-16: 0.875rem; // 1rem d, same for first btn, secondary big features, footer links
+  --fs-h2-features: 1.125rem; // 1.25rem
+  --fs-secondary-features: 0.875rem; //same d
+  --fs-h2-big-f: 1.125rem; // 2.5rem d
+  --fs-comment: 0.625rem; // 0.875rem d
+  --fs-10: 0.625rem; // same, author and error
+  --fs-job-title: 0.4375rem; // .5rem d
+  --fs-title-form: 1.12rem; // 2rem d
+  --fs-14: 0.875rem; // same d, subtitle form, btn form, footer contact
+  --fs-input: 0.625rem; // .75rem d
+
+  // padding and margin mesure
+  --m-24-72: 1.5rem; // 4.5rem d
+  --m-24-80: 1.5rem; // 5rem d
+  --m-48-72: 3rem; // 4.5rem d
+  --m-28-auto: 1.75rem;
+  --m-16-32: 1rem;
+  --m-16-24: 1rem;
+  --m-24-40: 1.5rem;
+  --m-120-152: 7.5rem;
+  --m-160-144: 10rem;
+  --m-28-76: 1.75rem;
+  --m-36-52: 2.25rem;
+  --m-16-0: 1rem;
+  --m-48-0: 3rem;
+  --m-56-0: 3.5rem;
+
+  // gap
+  --g-24-56: 1.5rem; // 3.5rem d
+
+  // height
+  --h-24-auto: 1.5rem;
+
+  // width
+  --w-70: 70%;
+
+  @include breakpoint('tablet') {
+    // font size
+    --fs-12-16: 1rem;
+    --fs-h1: 2.5rem;
+    --fs-secondary-heading: 1.25rem;
+    --fs-14-16: 1rem;
+    --fs-h2-features: 1.25rem;
+    --fs-h2-big-f: 2.5rem;
+    --fs-comment: 0.875rem;
+    --fs-job-title: 0.5rem;
+    --fs-title-form: 2rem;
+    --fs-input: 0.75rem;
+
+    // padding and margin mesure
+    --m-24-72: 4.5rem;
+    --m-24-80: 5rem;
+    --m-48-72: 4.5rem;
+    --m-28-auto: auto;
+    --m-16-32: 2rem;
+    --m-16-24: 1.5rem;
+    --m-24-40: 2.5rem;
+    --m-120-152: 9.5rem;
+    --m-160-144: 9rem;
+    --m-28-76: 4.75rem;
+    --m-36-52: 3.25rem;
+    --m-16-0: 0;
+    --m-48-0: 0;
+    --m-56-0: 0;
+
+    // gap
+    --g-24-56: 3.5rem;
+
+    // height
+    --h-24-auto: auto;
+  }
+}
+
+body {
+  background-color: var(--bg-main);
+  color: hsl(256, 100%, 100%);
+  font-family: var(--ff-body);
+}
+
+// utility class
+.bg-dark {
+  background-color: var(--bg-main);
+}
+
+.max-15 {
+  max-width: 15rem;
+}
+
+.shadow {
+  box-shadow: 0.35rem 0.35rem 0.75rem hsla(0, 0%, 0%, 0.35);
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}

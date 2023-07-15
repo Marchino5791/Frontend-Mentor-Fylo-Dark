@@ -1,0 +1,25 @@
+nav {
+  font-family: var(--ff-header-n-cta);
+  display: flex;
+  justify-content: space-between;
+  margin-inline: var(--m-24-80);
+  margin-bottom: var(--m-48-72);
+  height: var(--h-24-auto);
+
+  .link-box {
+    display: flex;
+    align-items: center;
+    gap: var(--g-24-56);
+
+    a,
+    a:link,
+    a:checked {
+      font-size: var(--fs-12-16);
+
+      &:hover {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@use '../abstracts/mixins' as *;
+
+header {
+  background-color: var(--bg-intro-n-mail);
+  padding-top: var(--m-24-72);
+
+  background-image: url('../src/assets/bg-curvy-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  @include breakpoint('tablet') {
+    background-image: url('../src/assets/bg-curvy-desktop.svg');
+  }
+
+  .heading {
+    width: auto;
+    margin-inline: 1.75rem;
+    text-align: center;
+
+    @include breakpoint('tablet-small') {
+      @include container(--w-70);
+      max-width: 720px;
+    }
+
+    // &__box-img {
+    //   padding-inline: 0.5rem;
+    // }
+
+    h1 {
+      font-size: var(--fs-h1);
+      margin-block: 2rem var(--m-16-32);
+    }
+
+    p {
+      font-size: var(--fs-secondary-heading);
+      margin-bottom: 2rem;
+
+      @include breakpoint('tablet') {
+        padding-inline: 3rem;
+      }
+    }
+  }
+}
