@@ -7,7 +7,7 @@ export const features: {
 }[] = [
   {
     id: 1,
-    image: '../src/assets/icon-access-anywhere.svg',
+    image: './assets/icon-access-anywhere.svg',
     alt: 'icon with a pc and phone',
     title: 'Access your files, anywhere',
     subtitle:
@@ -15,7 +15,7 @@ export const features: {
   },
   {
     id: 2,
-    image: '../src/assets/icon-security.svg',
+    image: './src/assets/icon-security.svg',
     alt: 'icon with a checked shield',
     title: 'Security you can trust',
     subtitle:
@@ -23,7 +23,7 @@ export const features: {
   },
   {
     id: 3,
-    image: '../src/assets/icon-collaboration.svg',
+    image: '../assets/icon-collaboration.svg',
     alt: 'icon with three people',
     title: 'Real-time collaboration',
     subtitle:
@@ -31,7 +31,7 @@ export const features: {
   },
   {
     id: 4,
-    image: '../src/assets/icon-any-file.svg',
+    image: './src/assets/icon-any-file.svg',
     alt: 'icon with a folder',
     title: 'Store any type of file',
     subtitle:
