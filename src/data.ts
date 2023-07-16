@@ -1,3 +1,8 @@
+import access from '../src/assets/icon-access-anywhere.svg'
+import security from '../src/assets/icon-security.svg'
+import collaboration from '../src/assets/icon-collaboration.svg'
+import file from '../src/assets/icon-any-file.svg'
+
 export const features: {
   id: number
   image: string
@@ -7,7 +12,7 @@ export const features: {
 }[] = [
   {
     id: 1,
-    image: '../src/assets/icon-access-anywhere.svg',
+    image: access,
     alt: 'icon with a pc and phone',
     title: 'Access your files, anywhere',
     subtitle:
@@ -15,7 +20,7 @@ export const features: {
   },
   {
     id: 2,
-    image: '../src/assets/icon-security.svg',
+    image: security,
     alt: 'icon with a checked shield',
     title: 'Security you can trust',
     subtitle:
@@ -23,7 +28,7 @@ export const features: {
   },
   {
     id: 3,
-    image: '../src/assets/icon-collaboration.svg',
+    image: collaboration,
     alt: 'icon with three people',
     title: 'Real-time collaboration',
     subtitle:
@@ -31,7 +36,7 @@ export const features: {
   },
   {
     id: 4,
-    image: '../src/assets/icon-any-file.svg',
+    image: file,
     alt: 'icon with a folder',
     title: 'Store any type of file',
     subtitle:
