@@ -55,6 +55,11 @@ main {
 
       h2 {
         font-size: var(--fs-h2-big-f);
+
+        @include breakpoint('desktop') {
+          width: 85%;
+          line-height: 1.4;
+        }
       }
 
       p {

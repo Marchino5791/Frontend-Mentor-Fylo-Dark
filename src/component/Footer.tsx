@@ -60,11 +60,11 @@ export const Footer = () => {
           <i className="social__icon fa-brands fa-facebook-f"></i>
         </a>
         <a href="https://twitter.com" target="_blank">
-          <span className="sr-only"></span>
+          <span className="sr-only">Twitter</span>
           <i className="social__icon fa-brands fa-twitter"></i>
         </a>
         <a href="https://instagram.com" target="_blank">
-          <span className="sr-only"></span>
+          <span className="sr-only">Instagram</span>
           <i className="social__icon fa-brands fa-instagram"></i>
         </a>
       </div>

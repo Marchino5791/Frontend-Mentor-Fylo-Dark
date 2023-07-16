@@ -400,6 +400,12 @@ main .bigFeature__img-box img {
 main .bigFeature__text-box h2 {
   font-size: var(--fs-h2-big-f);
 }
+@media (min-width: 67.5em) {
+  main .bigFeature__text-box h2 {
+    width: 85%;
+    line-height: 1.4;
+  }
+}
 main .bigFeature__text-box p {
   margin-block: 1rem;
   font-size: var(--fs-14-16);
