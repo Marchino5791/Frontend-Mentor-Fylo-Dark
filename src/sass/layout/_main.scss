@@ -68,7 +68,15 @@ main {
         gap: 0.5rem;
         color: var(--cyan-cta-gradient);
         font-size: var(--fs-12-16);
-        text-decoration: underline;
+        border-bottom: 1px solid currentColor;
+
+        &:hover {
+          color: hsl(0, 0%, 100%);
+        }
+
+        &:hover use {
+          fill: hsl(0, 0%, 100%);
+        }
       }
     }
 
