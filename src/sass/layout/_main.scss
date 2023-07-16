@@ -138,7 +138,8 @@ main {
           img {
             border-radius: 50%;
             width: 1.5rem;
-            aspect-ratio: 1;
+            height: 1.5rem;
+            align-self: center;
           }
 
           &__text-box {

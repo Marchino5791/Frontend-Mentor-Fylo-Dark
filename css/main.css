@@ -486,7 +486,8 @@ main #comments .comments-container__comment__author {
 main #comments .comments-container__comment__author img {
   border-radius: 50%;
   width: 1.5rem;
-  aspect-ratio: 1;
+  height: 1.5rem;
+  align-self: center;
 }
 main #comments .comments-container__comment__author__text-box .author {
   font-size: var(--fs-10);
