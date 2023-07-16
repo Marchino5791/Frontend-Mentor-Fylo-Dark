@@ -2,6 +2,9 @@ import access from '../src/assets/icon-access-anywhere.svg'
 import security from '../src/assets/icon-security.svg'
 import collaboration from '../src/assets/icon-collaboration.svg'
 import file from '../src/assets/icon-any-file.svg'
+import profile1 from '../src/assets/profile-1.jpg'
+import profile2 from '../src/assets/profile-2.jpg'
+import profile3 from '../src/assets/profile-3.jpg'
 
 export const features: {
   id: number
@@ -55,7 +58,7 @@ export const comments: {
     id: 1,
     comment:
       'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.',
-    image: './src/assets/profile-1.jpg',
+    image: profile1,
     author: 'Satish Patel',
     jobTitle: 'Founder & CEO, Huddle',
   },
@@ -63,7 +66,7 @@ export const comments: {
     id: 2,
     comment:
       'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.',
-    image: './src/assets/profile-2.jpg',
+    image: profile2,
     author: 'Bruce McKenzie',
     jobTitle: 'Founder & CEO, Huddle',
   },
@@ -71,7 +74,7 @@ export const comments: {
     id: 3,
     comment:
       'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.',
-    image: './src/assets/profile-3.jpg',
+    image: profile3,
     author: 'Iva Boyd',
     jobTitle: 'Founder & CEO, Huddle',
   },
