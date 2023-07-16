@@ -3,7 +3,7 @@ import { Feature } from './Feature'
 import { features } from '../data'
 
 export const Features = () => {
-  const [featArr, setFeatArr] = useState(features)
+  const [featArr] = useState(features)
 
   return (
     <section id="features">

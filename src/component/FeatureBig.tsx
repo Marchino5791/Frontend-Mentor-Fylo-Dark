@@ -1,7 +1,5 @@
 import { FC } from 'react'
 
-import arrow from '../assets/icon-arrow.svg'
-
 interface Props {
   image: string
   alt: string

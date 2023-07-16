@@ -4,7 +4,7 @@ import { Comment } from './Comment.tsx'
 import quote from '../assets/bg-quotes.png'
 
 export const CommentContainer = () => {
-  const [commentsArr, setCommentsArr] = useState(comments)
+  const [commentsArr] = useState(comments)
 
   return (
     <section id="comments">
