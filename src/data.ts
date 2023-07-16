@@ -7,7 +7,7 @@ export const features: {
 }[] = [
   {
     id: 1,
-    image: './assets/icon-access-anywhere.svg',
+    image: ',/Frontend-Mentor-Fylo-Dark/src/assets/icon-access-anywhere.svg',
     alt: 'icon with a pc and phone',
     title: 'Access your files, anywhere',
     subtitle:
@@ -15,7 +15,7 @@ export const features: {
   },
   {
     id: 2,
-    image: './src/assets/icon-security.svg',
+    image: '../assets/icon-security.svg',
     alt: 'icon with a checked shield',
     title: 'Security you can trust',
     subtitle:
@@ -23,7 +23,7 @@ export const features: {
   },
   {
     id: 3,
-    image: '../assets/icon-collaboration.svg',
+    image: './src/assets/icon-collaboration.svg',
     alt: 'icon with three people',
     title: 'Real-time collaboration',
     subtitle:
@@ -50,7 +50,7 @@ export const comments: {
     id: 1,
     comment:
       'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.',
-    image: '../src/assets/profile-1.jpg',
+    image: './src/assets/profile-1.jpg',
     author: 'Satish Patel',
     jobTitle: 'Founder & CEO, Huddle',
   },
@@ -58,7 +58,7 @@ export const comments: {
     id: 2,
     comment:
       'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.',
-    image: '../src/assets/profile-2.jpg',
+    image: './src/assets/profile-2.jpg',
     author: 'Bruce McKenzie',
     jobTitle: 'Founder & CEO, Huddle',
   },
@@ -66,7 +66,7 @@ export const comments: {
     id: 3,
     comment:
       'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.',
-    image: '../src/assets/profile-3.jpg',
+    image: './src/assets/profile-3.jpg',
     author: 'Iva Boyd',
     jobTitle: 'Founder & CEO, Huddle',
   },
