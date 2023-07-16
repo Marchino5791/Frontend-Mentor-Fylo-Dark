@@ -24,11 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Fylo's Screenshot (heading)](https://github.com/Marchino5791/Frontend-Mentor-Fylo-Dark/blob/main/Screenshot%202023-07-15%2019.26.12.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Marchino5791/Frontend-Mentor-Fylo-Dark](https://github.com/Marchino5791/Frontend-Mentor-Fylo-Dark)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process

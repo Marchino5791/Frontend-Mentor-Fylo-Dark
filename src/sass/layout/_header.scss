@@ -3,7 +3,6 @@
 header {
   background-color: var(--bg-intro-n-mail);
   padding-top: var(--m-24-72);
-
   background-image: url('../src/assets/bg-curvy-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -22,10 +21,6 @@ header {
       @include container(--w-70);
       max-width: 720px;
     }
-
-    // &__box-img {
-    //   padding-inline: 0.5rem;
-    // }
 
     h1 {
       font-size: var(--fs-h1);

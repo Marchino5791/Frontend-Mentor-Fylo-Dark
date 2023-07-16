@@ -4,7 +4,7 @@ export const Form = () => {
   const [email, setEmail] = useState<string>('')
   const [error, setError] = useState<boolean>(false)
 
-  const submitHandle = (e) => {
+  const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
     if (error) {
       e.preventDefault()
     } else {
@@ -12,8 +12,8 @@ export const Form = () => {
     }
   }
 
-  const handleEmailChange = (event) => {
-    const char: string = event.target.value
+  const handleEmailChange = (event: React.FormEvent<HTMLInputElement>) => {
+    const char: string = event.currentTarget.value
     setEmail(char)
     console.log(email)
   }
