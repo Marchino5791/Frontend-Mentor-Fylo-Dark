@@ -7,7 +7,7 @@ export const features: {
 }[] = [
   {
     id: 1,
-    image: ',/Frontend-Mentor-Fylo-Dark/src/assets/icon-access-anywhere.svg',
+    image: './Frontend-Mentor-Fylo-Dark/src/assets/icon-access-anywhere.svg',
     alt: 'icon with a pc and phone',
     title: 'Access your files, anywhere',
     subtitle:
@@ -15,7 +15,7 @@ export const features: {
   },
   {
     id: 2,
-    image: '../assets/icon-security.svg',
+    image: 'Frontend-Mentor-Fylo-Dark/src/assets/icon-security.svg',
     alt: 'icon with a checked shield',
     title: 'Security you can trust',
     subtitle:
